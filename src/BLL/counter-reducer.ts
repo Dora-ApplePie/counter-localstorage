@@ -25,7 +25,7 @@ export const counterReducer = (state: initialStateType = initialState, action: A
 export const incValueAC = () => ({type: 'INC-VALUE'} as const);
 export const setValueFromLocalStorageAC = (value: number) => ({type: 'SET-VALUE-FROM-LOCAL-STORAGE', value} as const);
 
-export type incValueType = ReturnType<typeof incValueAC>
-export type setValueFromLocalStorage = ReturnType<typeof setValueFromLocalStorageAC>
+export type IncValueType = ReturnType<typeof incValueAC>
+export type SetValueFromLocalStorage = ReturnType<typeof setValueFromLocalStorageAC>
 
-export type ActionType = incValueType | setValueFromLocalStorage
+export type ActionType = IncValueType | SetValueFromLocalStorage
